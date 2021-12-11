@@ -51,6 +51,7 @@ class StackTest extends TestCase
         $this->assertEquals($this->sut->pop(), 2);
         $this->assertEquals($this->sut->length(), 1);
         $this->assertEquals($this->sut->pop(), 1);
+        $this->assertEquals($this->sut->length(), 0);
     }
 
     protected function setUp(): void
